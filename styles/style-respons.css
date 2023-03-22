@@ -1,0 +1,182 @@
+
+
+@media screen and (max-width: 912px) {
+    /* VRCHNI CAST*/
+    .top {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: 250px;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        background-image: url(../img/logo.jpg);
+        width: 150px;
+        height: 150px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-left: 5%;
+    }
+
+    /*NAVIGACE*/
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        align-content: center;
+        align-items: center;
+        margin-left: 10%;
+        margin-top: 3%;
+    }
+
+
+    .navitem {
+        font-size: 14px;
+    }
+
+    .garden-img {
+        background-image: url(../img/zahradka1.png);
+        background-size: cover;
+        width: 100%;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-position:center;
+    }
+
+     /*GALERIE*/
+    
+    .cont{
+      display: flex;
+      flex-direction: column;
+    }
+    .slide{
+        object-fit: cover;
+        max-height: auto;
+    }
+
+    /*KONTAKT*/
+
+    .main-map {
+        background-image: url(../img/map.png);
+        background-size: contain;
+        width: 500px;
+        height: 400px;
+        background-repeat: no-repeat;
+        transition: none;
+    }
+
+    .main-map:hover {
+        transform: none;
+    }
+
+    .main-text-title-kont {
+        text-align: center;
+    }
+    
+    /*TEKUTE MASO*/
+
+    .tekute-maso-toget {
+        margin-top: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* INDEX */
+    
+    .main-together {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        margin-bottom: 5%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .lavie-img{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    /*CHILLI*/
+    .chilli-main{ 
+        border: 2px black solid;
+        border-radius: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 35px;
+        width: 300px !important;
+        height: 350px;
+        align-self: center;    
+    }
+
+    .chilli-main-toget{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        align-self: center;
+    }
+
+    /*CHILLI LOGGED*/
+    .submit-box-lo{
+        width: 150px !important;
+        height: 350px !important;
+        border: 1px black solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-around;
+    }
+
+    .admin-text{
+        margin-top: 7%;
+        text-align: left;
+        padding:  0.4em;
+        padding-bottom:190px;
+        width: 40% !important;
+        height: 10px;
+        align-items: center;
+    }
+    /*CHILLI ADMIN CLANEK*/
+    .article-info{
+        font-size: 17px !important;
+    }
+
+
+    /*SPODNI CAST*/
+    footer {
+        width: 100%;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: rgb(44, 44, 44);
+        box-shadow: 0px 0px 30px 1px #00000030;
+        overflow: hidden;
+
+        bottom: 0;
+    }
+
+
+    .social-item {
+        width: 25px;
+        height: 25px;
+        border: 1px rgb(65, 64, 64) solid;
+        border-radius: 50%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat
+    }
+}

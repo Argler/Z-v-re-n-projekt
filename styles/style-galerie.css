@@ -1,0 +1,57 @@
+/* GALERIE */
+
+.parent-cont{
+    height:600px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+
+.cont {
+    display: flex;
+    width: 150vh;
+    height: 100%;
+    margin-top: 10vh;
+    /*margin-bottom: 20vh;*/
+}
+
+.slide{
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height:max-content;
+    cursor: pointer;
+    margin: 10px;
+    flex: 0.4;
+    transition: flex 0.5s ease-in-out;
+    max-width: auto;
+}
+
+.active {
+    flex: 5;
+}
+
+/* imgase */
+
+.i1{
+    background-image: url(../img/ga1.png);
+    object-fit: cover;
+}
+
+.i2{
+    background-image: url(../img/ga2.png);
+}
+
+.i3{
+    background-image: url(../img/ga3.png);
+}
+
+.i4{
+    background-image: url(../img/ga4.png);
+}
+
+.i5{
+    background-image: url(../img/ga5.png);
+}

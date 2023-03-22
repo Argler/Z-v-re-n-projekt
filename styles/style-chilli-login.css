@@ -1,0 +1,61 @@
+.chilli-main-toget{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/*CHILLI- REGISTRACE*/
+
+.chilli-main{ 
+    border: 2px black solid;
+    border-radius: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 35px;
+    width: 400px;
+    height: 400px;
+
+}
+
+.Submit-button { 
+    width: 100px;
+    height: 50px;
+}
+
+.Submit-box-chilli{
+    margin-top: 10px;
+}
+.chilli-toget{
+    margin-bottom:5%
+}
+
+.acc-heslo2-box{
+margin-top: 15px;
+}
+
+/*CHILLI - PŘIHLÁŠENÍ*/
+
+.Submit-box-chilli-login{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.Remember-box-chilli-login{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+/*CHILLI - ADMIN*/
+
+.admin-toget{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

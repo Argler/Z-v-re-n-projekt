@@ -1,0 +1,56 @@
+//validace celku
+
+function validate()
+{
+    var inputs = [...document.getElementsByTagName("input")];
+    var required = inputs.filter(el => el.hasAttribute("required"));
+    var email = document.getElementById("email");
+    var password = document.getElementById("heslo");
+    var result1 = validateRequired(required);
+    var result2 = validateEmail(email);
+    var result3 = validatePassword(password);
+    var res = result1 && result2 && result3;
+    if(res)
+    {
+        console.log("OK");
+    }
+
+    return res;
+}
+
+//validace required inputu
+
+function validateRequired(required)
+{
+    var result = required.some(el => el.value == "");
+    if(result)
+    {
+        alert("Jedna, nebo více položek je nevyplněno");
+    }
+    return !result;
+}
+
+//validace emailu
+
+function validateEmail(email)
+{
+    const pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    var result = pattern.test(email.value);
+    if(!result){
+        alert("Špatný formát hesla");
+    }
+    return result;
+}
+
+//validace hesla
+
+function validatePassword(password)
+{
+    if(!(password.value.length >= 8)){
+        alert("Heslo je příliš krátké");
+        return false;
+    }
+    return true;
+}
+
+
