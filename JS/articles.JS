@@ -1,4 +1,4 @@
-//ziskani value z textarea
+//ziskani value z textarea a userId
 function sendArticle() {
   const val = document.getElementById("textarea").value;
   // const val = text.value;
