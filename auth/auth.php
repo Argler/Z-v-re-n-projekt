@@ -16,24 +16,24 @@ class auth implements iauth
     $this -> crypt = new crypt();
    } 
 
-   // public function check_loggedIn(): bool
-   // {
-   //  if(isset($_SESSION["email"]) && isset ($_SESSION["heslo"]))
-   //  {
-   //     return true;
-   //  } else {
-   //      return false;
-   //  }
-   //  }
-   //  public function check_loggedIn_admin(): bool
-   //  {
-   //   if(isset($_SESSION["admin"]) && $_SESSION["admin"])
-   //   {
-   //      return true;
-   //   } else {
-   //       return false;
-   //   }
-   //   }
+   public function check_loggedIn(): bool
+   {
+    if(isset($_SESSION["email"]) && isset ($_SESSION["heslo"]))
+    {
+       return true;
+    } else {
+        return false;
+    }
+    }
+    public function check_loggedIn_admin(): bool
+    {
+     if(isset($_SESSION["admin"]) && $_SESSION["admin"])
+     {
+        return true;
+     } else {
+         return false;
+     }
+     }
 
    public function get_user(string $userName, string $password): array
    {
